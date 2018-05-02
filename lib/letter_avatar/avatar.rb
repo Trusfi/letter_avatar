@@ -7,7 +7,7 @@ module LetterAvatar
     # we will need to change this
     FULLSIZE = 500
 
-    FILL_COLOR = 'rgba(255, 255, 255, 0.65)'.freeze
+    FILL_COLOR = 'rgba(255, 255, 255, 1)'.freeze
 
     FONT_FILENAME = File.join(File.expand_path('../../', File.dirname(__FILE__)), 'Roboto-Medium')
 
@@ -51,7 +51,7 @@ module LetterAvatar
         dir = "#{cache_path}/#{identity.letter}/#{identity.color.join('_')}"
         FileUtils.mkdir_p(dir)
 
-        "#{dir}/#{size}.png"
+        "#{dir}/#{size}.jpg"
       end
 
       def fullsize_path(identity)
