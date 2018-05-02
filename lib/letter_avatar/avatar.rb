@@ -51,7 +51,7 @@ module LetterAvatar
         dir = "#{cache_path}/#{identity.letter}/#{identity.color.join('_')}"
         FileUtils.mkdir_p(dir)
 
-        "#{dir}/#{size}.jpg"
+        "#{dir}/#{size}.png"
       end
 
       def fullsize_path(identity)
