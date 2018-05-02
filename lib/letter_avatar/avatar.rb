@@ -1,11 +1,11 @@
 module LetterAvatar
   class Avatar
     # BUMP UP if avatar algorithm changes
-    VERSION = 2
+    VERSION = 1
 
     # Largest avatar generated, one day when pixel ratio hit 3
     # we will need to change this
-    FULLSIZE = 240
+    FULLSIZE = 500
 
     FILL_COLOR = 'rgba(255, 255, 255, 0.65)'.freeze
 
